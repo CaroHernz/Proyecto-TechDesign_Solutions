@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>VerdeModa</title>
+    <link rel="icon" href="assets/img/leaf.webp" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre nosotros</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a class="active" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+            <img src="./assets/img/verdemoda_banner.jpeg" alt="Banner VerdeModa" class="banner__image">
+            <div class="banner__content"></div>
+        </div>
+    </header>
+    <main>
+        
+        <div class="contacto__contenedor">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para responder tus preguntas sobre moda sustentable</p>
+            <div class="contacto__contenido">
+                <div class="contacto__formulario">
+                    <h2>Envíanos un mensaje</h2>
+                    <form action="" id="contactoForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo*</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (opcional)</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto*</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="consulta">Consulta sobre productos</option>
+                                <option value="pedido">Seguimiento de pedido</option>
+                                <option value="devolucion">Devoluciones o cambios</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje*</label>
+                            <textarea id="mensaje" name="mensaje" rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="form-footer">
+                            <p>* Campos obligatorios</p>
+                            <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <div class="contacto__wsp" style="text-align: center;">
+                        <h2>Chat directo por WhatsApp</h2>
+                        <p>Para consultas inmediatas, escríbenos directamente:</p>
+                        <a href="https://wa.me/56912345678?text=Hola%20VerdeModa,%20tengo%20una%20consulta" class="btn-wsp" >
+                            <img src="assets/img/contacto_wsp.png" alt="WhatsApp" width="250px">
+                        </a>
+                        <p class="horario">Disponibles de Lunes a Viernes, 9:00 - 18:00 hrs</p>
+                    </div>
+                    <div class="contacto__email" style="text-align: center;">
+                        <img src="assets/img/contacto_email.webp" alt="Email" width="300px" style="position: absolute; right:15%; bottom: -60%; z-index: -1;">
+                        <h2>Correo electrónico</h2>
+                        <p style="color:darkgreen; font-size: 16px;"><strong>contacto@verdemoda.cl</strong></p>
+                        <p class="respuesta">Respondemos en menos de 24 horas hábiles</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="contenedor" >
+            <p class="slogan">Moda con propósito</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footbar">
+            <h3>VerdeModa</h3>
+            <p>Desde 2020 creando moda que respeta el medio ambiente y las personas. Cada prenda cuenta una historia de sustentabilidad y diseño consciente.</p>
+            <p>Creado por Carolina Hernández Barra</p>
+        </div>
+    </footer>
+    <script src="./assets/scripts/script.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
