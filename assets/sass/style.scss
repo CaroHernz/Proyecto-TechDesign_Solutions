@@ -103,8 +103,6 @@ body {
 
         &1,&2,&3,&4 {
             padding: 0px 15px;
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             h2 {
                 font-family: $font-primary;
@@ -186,7 +184,7 @@ body {
     &__dots {
         position: absolute;
         bottom: 10px;
-        left: 0;
+        left: -10%;
         right:0;
         text-align: center;
         z-index: 10;

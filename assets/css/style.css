@@ -93,8 +93,6 @@ body {
 }
 .index__contenedor1, .index__contenedor2, .index__contenedor3, .index__contenedor4 {
   padding: 0px 15px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 .index__contenedor1 h2, .index__contenedor2 h2, .index__contenedor3 h2, .index__contenedor4 h2 {
@@ -174,7 +172,7 @@ body {
 .carousel__dots {
   position: absolute;
   bottom: 10px;
-  left: 0;
+  left: -10%;
   right: 0;
   text-align: center;
   z-index: 10;
