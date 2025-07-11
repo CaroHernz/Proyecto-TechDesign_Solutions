@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
     <title>VerdeModa</title>
     <link rel="icon" href="assets/img/leaf.webp" type="image/x-icon">
-
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
@@ -21,13 +20,14 @@
                 </ul>
             </div>
         </nav>
+        
+    </header>
+    <main>
         <div class="banner">
             <img src="./assets/img/verdemoda_banner.jpeg" alt="Banner VerdeModa" class="banner__image">
             <div class="banner__content"></div>
         </div>
-    </header>
-    <main>
-        <div class="catalogo__contenedor">
+        <div class="catalogo__container">
             <p class="slogan">Moda con Conciencia Ecológica</p>
         <p>En <strong>VerdeModa</strong>  hemos creado un catálogo donde el estilo se encuentra con la sostenibilidad. Cada producto que encuentras aquí ha sido cuidadosamente diseñado con materiales que respetan el medio ambiente: nuestro vestuario esta confeccionado con algodón orgánico, lino natural y fibras recicladas; 
             nuestros accesorios son elaborados con materiales reutilizados y procesos de bajo impacto ambiental y las joyas son artesanales hechas a mano con piedras naturales, metales reciclados y técnicas ancestrales
@@ -40,23 +40,24 @@
                 <li>Empaques 100% biodegradables y libres de plásticos</li>
             </ul>
         </div>
-        <div class="catalogo__contenedor">
+        <div class="catalogo__container">
             <div class="tabs">
-                <button class="tab-btn active" data-tab="item1">Vestuario</button>
+                <button class="tab-btn active" id="showAll">Todos</button>
+                <button class="tab-btn" data-tab="item1">Vestuario</button>
                 <button class="tab-btn" data-tab="item2">Accesorio</button>
                 <button class="tab-btn " data-tab="item3">Joyas</button>
             </div>
             <div class="tab-content">
                 <div class="content-section active" id="item1">
                     <h1>Vestuario</h1>
-                    <div class="contenedor">
-                        <div class="contenedor__item">
-                            <div class="contenedor__img">
-                                <div class="btn-img">
+                    <div class="card__container">
+                        <div class="card__item">
+                            <div class="card__img">
+                                <div class="card__btn">
                                     <img src="assets/img/vestuario1.jpeg" alt="" width="150px" height="200px">
                                 </div>
                             </div>
-                            <div class="contenedor__contenido">
+                            <div class="card__content">
                                 <h2>Falda Mid-Length Sustentable</h2>
                                 <ul>
                                     <li><strong>Categoría:</strong> Vestuario</li>
@@ -68,13 +69,13 @@
                                 <button type="button">Comprar</button>
                             </div>
                         </div>
-                        <div class="contenedor__item">
-                            <div class="contenedor__img">
-                                <div class="btn-img">
+                        <div class="card__item">
+                            <div class="card__img">
+                                <div class="card__btn">
                                     <img src="assets/img/vestuario2.jpeg" alt="" width="150px" height="200px">
                                 </div>
                             </div>
-                            <div class="contenedor__contenido">
+                            <div class="card__content">
                                 <h2>Polerón Unisex Básico</h2>
                                 <ul>
                                     <li><strong>Categoría:</strong> Vestuario</li>
@@ -86,13 +87,13 @@
                                 <button type="button">Comprar</button>
                             </div>
                         </div>
-                        <div class="contenedor__item">
-                            <div class="contenedor__img">
-                                <div class="btn-img">
+                        <div class="card__item">
+                            <div class="card__img">
+                                <div class="card__btn">
                                     <img src="assets/img/vestuario3.jpeg" alt="" width="150px" height="200px">
                                 </div>
                             </div>
-                            <div class="contenedor__contenido">
+                            <div class="card__content">
                                 <h2>Vestido Largo "Noche Verde"</h2>
                                 <ul>
                                     <li><strong>Categoría:</strong> Vestuario</li>
@@ -108,14 +109,14 @@
                 </div>
                 <div class="content-section" id="item2">
                     <h1>Accesorios</h1>
-                    <div class="contenedor">
-                        <div class="contenedor__item">
-                            <div class="contenedor__img">
-                                <div class="btn-img">
+                    <div class="card__container">
+                        <div class="card__item">
+                            <div class="card__img">
+                                <div class="card__btn">
                                     <img src="assets/img/accesory1.jpeg" alt="" width="150px" height="200px">
                                 </div>
                             </div>
-                            <div class="contenedor__contenido">
+                            <div class="card__content">
                                 <h2>Sombrero de Yute</h2>
                                 <ul>
                                     <li><strong>Categoría:</strong> Accesorios</li>
@@ -127,13 +128,13 @@
                                 <button type="button">Comprar</button>
                             </div>
                         </div>
-                        <div class="contenedor__item">
-                            <div class="contenedor__img">
-                                <div class="btn-img">
+                        <div class="card__item">
+                            <div class="card__img">
+                                <div class="card__btn">
                                     <img src="assets/img/accesory2.jpeg" alt="" width="150px" height="200px">
                                 </div>
                             </div>
-                            <div class="contenedor__contenido">
+                            <div class="card__content">
                                 <h2>Set Invernal Eco-Warm</h2>
                                 <ul>
                                     <li><strong>Categoría:</strong> Accesorios</li>
@@ -145,13 +146,13 @@
                                 <button type="button">Comprar</button>
                             </div>
                         </div>
-                        <div class="contenedor__item">
-                            <div class="contenedor__img">
-                                <div class="btn-img">
+                        <div class="card__item">
+                            <div class="card__img">
+                                <div class="card__btn">
                                     <img src="assets/img/accesory3.jpeg" alt="" width="150px" height="200px">
                                 </div>
                             </div>
-                            <div class="contenedor__contenido">
+                            <div class="card__content">
                                 <h2>Cartera "Leaf Collection"</h2>
                                 <ul>
                                     <li><strong>Categoría:</strong> Accesorios</li>
@@ -167,14 +168,14 @@
                 </div>
                 <div class="content-section" id="item3">
                     <h1>Joyas artesanales</h1>
-                    <div class="contenedor">
-                        <div class="contenedor__item">
-                            <div class="contenedor__img">
-                                <div class="btn-img">
+                    <div class="card__container">
+                        <div class="card__item">
+                            <div class="card__img">
+                                <div class="card__btn">
                                     <img src="assets/img/joyas1.jpeg" alt="" width="150px" height="200px">
                                 </div>
                             </div>
-                            <div class="contenedor__contenido">
+                            <div class="card__content">
                                 <h2>Set "Armonía Verde"</h2>
                                 <ul>
                                     <li><strong>Categoría:</strong> Joyas</li>
@@ -186,13 +187,13 @@
                                 <button type="button">Comprar</button>
                             </div>
                         </div>
-                        <div class="contenedor__item">
-                            <div class="contenedor__img">
-                                <div class="btn-img">
+                        <div class="card__item">
+                            <div class="card__img">
+                                <div class="card__btn">
                                     <img src="assets/img/joyas2.jpeg" alt="" width="150px" height="200px">
                                 </div>
                             </div>
-                            <div class="contenedor__contenido">
+                            <div class="card__content">
                                 <h2>Aretes "Hoja de Verano"</h2>
                                 <ul>
                                     <li><strong>Categoría:</strong> Joyas</li>
@@ -204,13 +205,13 @@
                                 <button type="button">Comprar</button>
                             </div>
                         </div>
-                        <div class="contenedor__item">
-                            <div class="contenedor__img">
-                                <div class="btn-img">
+                        <div class="card__item">
+                            <div class="card__img">
+                                <div class="card__btn">
                                     <img src="assets/img/joyas3.jpeg" alt="" width="150px" height="200px">
                                 </div>
                             </div>
-                            <div class="contenedor__contenido">
+                            <div class="card__content">
                                 <h2>Set "Esencia Verde"</h2>
                                 <ul>
                                     <li><strong>Categoría:</strong> Joyas</li>
@@ -235,8 +236,5 @@
         </div>
     </footer>
     <script src="./assets/scripts/catalogo.js"></script>
-    <script>
-        
-    </script>
 </body>
 </html>

@@ -27,121 +27,149 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Carrusel de img
 document.addEventListener('DOMContentLoaded', function() {
-    // Inicializar todos los carruseles en la página
-    const carousels = document.querySelectorAll('.carousel__container');
-    
-    carousels.forEach(container => {
-        initializeCarousel(container);
+    // Configuración del carrusel
+    const images = [
+        { src: 'assets/img/img1.jpeg', alt: 'Moda ecológica 1' },
+        { src: 'assets/img/img2.jpeg', alt: 'Moda ecológica 2' },
+        { src: 'assets/img/img3.jpeg', alt: 'Moda ecológica 3' },
+        { src: 'assets/img/img4.jpeg', alt: 'Moda ecológica 4' },
+        { src: 'assets/img/img5.jpeg', alt: 'Moda ecológica 5' },
+        { src: 'assets/img/img6.jpeg', alt: 'Moda ecológica 6' }
+    ];
+
+    // Elementos del DOM
+    const container = document.querySelector('.carousel');
+    const dotsContainer = document.querySelector('.carousel__dots');
+    let currentIndex = 0;
+    let interval;
+
+    // Crear imágenes y puntos
+    images.forEach((img, index) => {
+        // Crear elemento de imagen
+        const imgElement = document.createElement('img');
+        imgElement.src = img.src;
+        imgElement.alt = img.alt;
+        imgElement.classList.add('carousel__slide');
+        if(index === 0) imgElement.classList.add('active');
+        container.appendChild(imgElement);
+
+        // Crear punto indicador
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if(index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => showImage(index));
+        dotsContainer.appendChild(dot);
     });
-    
-    // Función para inicializar un carrusel individual
-    function initializeCarousel(container) {
-        const carousel = container.querySelector('.carousel');
-        const slides = container.querySelectorAll('.carousel__slide');
-        const dots = container.querySelectorAll('.dot');
-        const prevBtn = container.querySelector('.carousel__btn.prev');
-        const nextBtn = container.querySelector('.carousel__btn.next');
+
+    // Iniciar carrusel automático
+    startCarousel();
+
+    // Función para mostrar una imagen específica
+    function showImage(index) {
+        // Ocultar imagen actual
+        document.querySelector('.carousel__slide.active').classList.remove('active');
+        document.querySelector('.dot.active').classList.remove('active');
         
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-        let interval;
+        // Mostrar nueva imagen
+        currentIndex = index;
+        container.children[currentIndex].classList.add('active');
+        dotsContainer.children[currentIndex].classList.add('active');
         
-        // Configurar el ancho del carrusel
-        carousel.style.width = `${totalSlides * 100}%`;
-        
-        // Configurar el ancho de cada slide
-        slides.forEach(slide => {
-            slide.style.width = `${100 / totalSlides}%`;
-        });
-        
-        // Actualizar la posición del carrusel
-        function updateCarousel() {
-            const translateX = -currentIndex * 100;
-            carousel.style.transform = `translateX(${translateX}%)`;
-            
-            // Actualizar puntos indicadores
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
-            });
-        }
-        
-        // Navegar al slide anterior
-        function goToPrevSlide() {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
-            updateCarousel();
-            resetInterval();
-        }
-        
-        // Navegar al siguiente slide
-        function goToNextSlide() {
-            currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
-            updateCarousel();
-            resetInterval();
-        }
-        
-        // Navegar a un slide específico
-        function goToSlide(index) {
-            currentIndex = index;
-            updateCarousel();
-            resetInterval();
-        }
-        
-        // Reiniciar el intervalo de auto-desplazamiento
-        function resetInterval() {
-            clearInterval(interval);
-            interval = setInterval(goToNextSlide, 5000);
-        }
-        
-        // Event listeners para los botones
-        prevBtn.addEventListener('click', goToPrevSlide);
-        nextBtn.addEventListener('click', goToNextSlide);
-        
-        // Event listeners para los puntos
-        dots.forEach(dot => {
-            dot.addEventListener('click', function() {
-                const slideIndex = parseInt(this.getAttribute('data-slide'));
-                goToSlide(slideIndex);
-            });
-        });
-        
-        // Auto-desplazamiento
-        interval = setInterval(goToNextSlide, 5000);
-        
-        // Pausar al interactuar
-        container.addEventListener('mouseenter', () => clearInterval(interval));
-        container.addEventListener('mouseleave', () => {
-            interval = setInterval(goToNextSlide, 5000);
-        });
-        
-        // Mostrar el primer slide
-        updateCarousel();
+        // Reiniciar intervalo
+        resetInterval();
     }
-    
-    // Código para las pestañas (si es necesario)
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const contentSections = document.querySelectorAll('.content-section');
-    
-    function switchTab(tabId) {
-        tabBtns.forEach(btn => btn.classList.remove('active'));
-        contentSections.forEach(section => section.classList.remove('active'));
-        
-        const selectedBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
-        const selectedSection = document.getElementById(tabId);
-        
-        if(selectedBtn && selectedSection) {
-            selectedBtn.classList.add('active');
-            selectedSection.classList.add('active');
-        }
+
+    // Función para mostrar la siguiente imagen
+    function nextImage() {
+        const nextIndex = (currentIndex + 1) % images.length;
+        showImage(nextIndex);
     }
-    
-    if(tabBtns.length > 0) {
-        tabBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                const tabId = this.getAttribute('data-tab');
-                switchTab(tabId);
-            });
-        });
-        
-        switchTab('item1');
+
+    // Iniciar el carrusel automático
+    function startCarousel() {
+        interval = setInterval(nextImage, 3000); // Cambia cada 3 segundos
     }
+
+    // Reiniciar el intervalo
+    function resetInterval() {
+        clearInterval(interval);
+        startCarousel();
+    }
+
+    // Pausar al pasar el mouse
+    container.addEventListener('mouseenter', () => clearInterval(interval));
+    container.addEventListener('mouseleave', startCarousel);
+});
+
+// Carrusel de best seller
+document.addEventListener('DOMContentLoaded', function() {
+    // Configuración del carrusel
+    const images = [
+        { src: 'assets/img/vestuario3.jpeg', alt: 'Más vendido de vestuario' },
+        { src: 'assets/img/joyas3.jpeg', alt: 'Más vendido de joyas' },
+        { src: 'assets/img/accesory3.jpeg', alt: 'Más vendido de accesorios' },
+    ];
+
+    // Elementos del DOM
+    const container = document.querySelector('.carousel__bestseller');
+    const dotsContainer = document.querySelector('.carousel__bestseller__dots');
+    let currentIndex = 0;
+    let interval;
+
+    // Crear imágenes y puntos
+    images.forEach((img, index) => {
+        // Crear elemento de imagen
+        const imgElement = document.createElement('img');
+        imgElement.src = img.src;
+        imgElement.alt = img.alt;
+        imgElement.classList.add('carousel__slide');
+        if(index === 0) imgElement.classList.add('active');
+        container.appendChild(imgElement);
+
+        // Crear punto indicador
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if(index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => showImage(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    // Iniciar carrusel automático
+    startCarousel();
+
+    // Función para mostrar una imagen específica
+    function showImage(index) {
+        // Ocultar imagen actual
+        document.querySelector('.carousel__slide.active').classList.remove('active');
+        document.querySelector('.dot.active').classList.remove('active');
+        
+        // Mostrar nueva imagen
+        currentIndex = index;
+        container.children[currentIndex].classList.add('active');
+        dotsContainer.children[currentIndex].classList.add('active');
+        
+        // Reiniciar intervalo
+        resetInterval();
+    }
+
+    // Función para mostrar la siguiente imagen
+    function nextImage() {
+        const nextIndex = (currentIndex + 1) % images.length;
+        showImage(nextIndex);
+    }
+
+    // Iniciar el carrusel automático
+    function startCarousel() {
+        interval = setInterval(nextImage, 5000); // Cambia cada 5 segundos
+    }
+
+    // Reiniciar el intervalo
+    function resetInterval() {
+        clearInterval(interval);
+        startCarousel();
+    }
+
+    // Pausar al pasar el mouse
+    container.addEventListener('mouseenter', () => clearInterval(interval));
+    container.addEventListener('mouseleave', startCarousel);
 });

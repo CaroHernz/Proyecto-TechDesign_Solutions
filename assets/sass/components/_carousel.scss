@@ -1,0 +1,106 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+@use '../base/reset' as *;
+
+.carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    @include flex-center;
+
+    &__slide {
+        position: absolute;
+        height: 280px;
+        object-fit:fill;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        &.active {
+            opacity: 1;
+        }
+
+        
+    }
+    
+    &__dots {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right:0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        z-index: 10;
+        
+    }
+}
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    background-color: $color-white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 3px $color-dark;
+
+    &.active {
+        background-color: $color-primary;
+        transform: scale(1.2);
+    }
+    &:hover {
+        background-color: $color-dark;
+    }
+}
+
+.carousel__bestseller {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    @include flex-center;
+
+    &__slide {
+        position: absolute;
+        height: 280px;
+        object-fit:fill;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        &.active {
+            opacity: 1;
+        }
+
+        
+    }
+    
+    &__dots {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        right:0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        z-index: 10;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .carousel {
+        
+        &__dots {
+            bottom: 10px;
+        }
+    }
+                
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+    
+    }

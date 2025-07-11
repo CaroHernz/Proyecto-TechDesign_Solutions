@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <title>VerdeModa</title>
     <link rel="icon" href="assets/img/leaf.webp" type="image/x-icon">
-
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -24,115 +22,72 @@
                 </ul>
             </div>
         </nav>
+        
+    </header>
+    <main>
         <div class="banner">
             <img src="./assets/img/verdemoda_banner.jpeg" alt="Banner VerdeModa" class="banner__image">
             <div class="banner__content"></div>
         </div>
-    </header>
-    <main>
-        <div class="index__contenedor">
-            <div class="index__contenedor1">
-                <h1>Moda con Conciencia Ecológica</h1>
-                <p class="tagline">Viste bien, vive mejor, cuida el planeta</p>
-                <div class="carousel__container">
+        <section class="home__containers">
+            <section class="home__container--a">
+                <h2 class="container__title">Moda con Conciencia Ecológica</h2>
+                <p class="container__description tagline">Viste bien, vive mejor, cuida el planeta</p>
+                <div class="container__carousel">
                     <div class="carousel">
-                        <div class="carousel__slide">
-                            <img src="assets/img/img1.jpeg" alt="Moda ecológica 1">
-                        </div>
-                        <div class="carousel__slide">
-                            <img src="assets/img/img2.jpeg" alt="Moda ecológica 2">
-                        </div>
-                        <div class="carousel__slide">
-                            <img src="assets/img/img3.jpeg" alt="Moda ecológica 3">
-                        </div>
-                        <div class="carousel__slide">
-                            <img src="assets/img/img4.jpeg" alt="Moda ecológica 4">
-                        </div>
-                        <div class="carousel__slide">
-                            <img src="assets/img/img5.jpeg" alt="Moda ecológica 5">
-                        </div>
-                        <div class="carousel__slide">
-                            <img src="assets/img/img6.jpeg" alt="Moda ecológica 6">
-                        </div>
                     </div>
-                    <button class="carousel__btn prev">&#10094;</button>
-                    <button class="carousel__btn next">&#10095;</button>
-                    
                     <div class="carousel__dots">
-                        <span class="dot active" data-slide="0"></span>
-                        <span class="dot" data-slide="1"></span>
-                        <span class="dot" data-slide="2"></span>
-                        <span class="dot" data-slide="3"></span>
-                        <span class="dot" data-slide="4"></span>
-                        <span class="dot" data-slide="5"></span>
                     </div>
                 </div>
-                <a href="catalogo.html" class="cta-button">Descubre nuestra colección</a>
-            </div>
-            <div class="index__contenedor2">
-                <h2>Nuestro Compromiso Verde</h2>
-                <div class="eco-values">
-                    <div class="value-card">
-                        <img src="assets/img/leaf.webp" alt="Materiales sustentables"width="40px"
-                        style="position:static;">
-                        <h3>Materiales Responsables</h3>
-                        <p>Utilizamos algodón orgánico, lino y materiales reciclados en todas nuestras prendas.</p>
-                    </div>
-                    <div class="value-card">
-                        <img src="assets/img/leaf.webp" alt="Producción ética"width="40px"
-                        style="position:static;">
-                        <h3>Producción Ética</h3>
-                        <p>Trabajamos con talleres locales que garantizan condiciones laborales justas.</p>
-                    </div>
-                    <div class="value-card">
-                        <img src="assets/img/leaf.webp" alt="Bajo consumo de agua"width="40px"
-                        style="position:static">
-                        <h3>Procesos Limpios</h3>
-                        <p>Tintes naturales y procesos que reducen el consumo de agua en un 70%.</p>
-                    </div>
+                <a href="catalogo.html" class="contenedor__link">Descubre nuestra colección</a>
+            </section>
+            <section class="home__container--b">
+                <h2 class="container__title">Nuestro Compromiso Verde</h2>
+                <div class="container__item">
+                    <img src="assets/img/leaf.webp" alt="Materiales sustentables"width="40px"
+                style="position:static;">
+                    <h3 class="container__subtitle">Materiales Responsables</h3>
+                    <p class="container__description">Utilizamos algodón orgánico, lino y materiales reciclados en todas nuestras prendas.</p>
                 </div>
-            </div>
-            <div class="index__contenedor3">
-                <h2>Únete al Movimiento de Moda Sustentable</h2>
-                <p>Suscríbete y recibe un 10% de descuento en tu primera compra</p>
-                <form class="newsletter-form">
+                <div class="container__item">
+                    <img src="assets/img/leaf.webp" alt="Materiales sustentables"width="40px"
+                style="position:static;">
+                    <h3 class="container__subtitle">Producción Ética</h3>
+                    <p class="container__description">Trabajamos con talleres locales que garantizan condiciones laborales justas.</p>
+                </div>
+                <div class="container__item">
+                    <img src="assets/img/leaf.webp" alt="Materiales sustentables"width="40px"
+                style="position:static;">
+                    <h3 class="container__subtitle">Procesos Limpios</h3>
+                    <p class="container__description">Tintes naturales y procesos que reducen el consumo de agua en un 70%.</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="home__containers">
+            <section class="home__container--b">
+                <h2 class="container__title">Únete al Movimiento de Moda Sustentable</h2>
+                <p class="container__description">Suscríbete y recibe un 10% de descuento en tu primera compra</p>
+                <form class="container__form">
                     <input type="email" placeholder="Tu correo electrónico" required>
                     <button type="submit">Suscribirme</button>
                 </form>
-                <small>Prometemos no compartir tu información. Revisa nuestra <a href="#">política de
-                        privacidad</a>.</small>
-            </div>
-            <div class="index__contenedor4">
-                <h2>Lo Más Vendido</h2>
-                <div class="carousel__container">
-                    <div class="carousel">
-                        <div class="carousel__slide">
-                            <img src="assets/img/vestuario3.jpeg" alt="Moda ecológica 1">
-                        </div>
-                        <div class="carousel__slide">
-                            <img src="assets/img/accesory3.jpeg" alt="Moda ecológica 2">
-                        </div>
-                        <div class="carousel__slide">
-                            <img src="assets/img/joyas3.jpeg" alt="Moda ecológica 3">
-                        </div>
+                <p class="container__description">Prometemos no compartir tu información. Revisa nuestra <a href="#">política de
+                        privacidad</a>.</p>
+            </section>
+            <secttion class="home__container--a">
+                <h2 class="container__title">Lo Más Vendido</h2>
+                <div class="container__carousel">
+                    <div class="carousel__bestseller">
                     </div>
-                    <button class="carousel__btn prev">&#10094;</button>
-                    <button class="carousel__btn next">&#10095;</button>
-                    
-                    <div class="carousel__dots">
-                        <span class="dot active" data-slide="0"></span>
-                        <span class="dot" data-slide="1"></span>
-                        <span class="dot" data-slide="2"></span>
+                    <div class="carousel__bestseller__dots">
                     </div>
                 </div>
-                <a href="catalogo.html" class="secondary-button">Ver catálogo completo</a>
-                
-            </div>
-        </div>
-        <div class="slogan">
-            <p>Moda con propósito</p>
-        </div>
-        <section class="featured-products">
+                <a href="catalogo.html" class="contenedor__link">Ver catálogo completo</a>
+            </secttion>
+
+        </section>
+        
     </main>
     <footer>
         <div class="footbar">

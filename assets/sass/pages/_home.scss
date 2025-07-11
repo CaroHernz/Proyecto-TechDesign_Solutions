@@ -1,0 +1,55 @@
+@use '../abstracts/variables'  as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base'  as *;
+@use '../base/reset' as *;
+
+
+.home__containers {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+.home__container { 
+
+    &--a{
+        text-align: center;
+        padding: 0 0.5rem 1rem 0.5rem;
+        width: 50%;
+
+    }
+    &--b{
+        background: $color-secondary;
+        text-align: center;
+        padding: 0 0.5rem 1rem 0.5rem;
+        width: 50%;
+        @include flex-center;
+        flex-direction: column;
+
+    }
+}
+
+.container__carousel {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+    @include flex-center;
+}
+
+@media (max-width: 768px) {
+    .home__containers {
+        flex-direction: column;
+    }
+    .home__container {
+        &--a {
+            width: 100%;
+        }
+        &--b{
+            width: 100%;
+        }
+    }
+    .container__carousel {
+        height: 280px;
+    }
+}
