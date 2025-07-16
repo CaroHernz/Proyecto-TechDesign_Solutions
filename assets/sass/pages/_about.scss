@@ -35,7 +35,20 @@
         }
     }
 }
+.nav-link {
+    color: $color-primary;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    &:hover {
+        color: $color-secondary;
+    }
+}
+.navbar-brand {
+    font-size: 36px;
+    font-weight: bold;
 
+}
 
 @media (max-width: 768px) {
     

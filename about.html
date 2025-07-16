@@ -7,135 +7,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VerdeModa</title>
     <link rel="icon" href="assets/img/leaf.webp" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="#">Sobre nosotros</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-md navbar-custom sticky-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <i class="fas fa-leaf me-2"></i>VerdeModa
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="catalogo.html" class="nav-link">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </nav>
-    
+        </nav>    
     </header>
     <main>
         <div class="banner">
             <img src="./assets/img/verdemoda_banner.jpeg" alt="Banner VerdeModa" class="banner__image">
             <div class="banner__content"></div>
         </div>
-        <div class="about__container">
-            <div class="about__container--leftbar">
+
+        <section class="container row">
+            <div class="col-sm-12 col-md-2">
                 <img src="assets/img/verdemoda_leftside.jpeg" alt="Imagen decorativa" class="about__container--leftbar-img">
             </div>
-            <div class="about__container--content">
-                <p class="slogan">Moda con propósito</p>
-                <div class="menu">
-                    <div class="tabs">
-                        <button class="tab-btn active" data-tab="item1">🌿 Historia</button>
-                        <button class="tab-btn" data-tab="item2">Filosofía</button>
-                        <button class="tab-btn " data-tab="item3">🌿 Visión y Misión</button>
-                        <button class="tab-btn " data-tab="item4">Ubicación</button>
+            <div class="col-sm-12 col-md-10">
+                <nav id="navbar-example2" class="px-3 mb-3">
+                    <h5 class="text-success mt-2 mb-2 navbar-brand ">
+                        <i class="fas fa-leaf me-2 "></i>
+                        Sobre nosotros...
+                    </h5>
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">Historia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Filosofía</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading3">Visión y Misión</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading4">Ubicación</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
+                    <h3 id="scrollspyHeading1">🌿 Historia de la Marca</h3>
+                    <p><strong>VerdeModa</strong> es una tienda de moda sustentable que nace de la pasión
+                        por ofrecer prendas eco-friendly, elaboradas con materiales orgánicos y procesos
+                        éticos.
+                        <br>
+                        Nacimos como una pequeña tienda online en 2020, cuando nuestra fundadora Coco Lo
+                        identificó la necesidad de ofrecer moda sustentable accesible en todo Chile sin
+                        necesidad de locales físicos que incrementan el consumo energético.
+                    </p>
 
+                    Nuestro objetivo es reflejar nuestra esencia y facilitar la experiencia de compra de
+                    nuestros clientes.
+                    <div class="momentos">
+                        <h5>2020 - Los Inicios</h5>
+                        <p>Comenzamos confeccionando prendas con retazos de tela reciclada en un pequeño
+                            taller, vendiendo directamente a amigos y familiares.</p>
+                        <h5>2022 - Primer Local</h5>
+                        <p>Abrimos nuestro primer espacio físico en el barrio Lastarria, donde implementamos
+                            nuestro sistema de "zero waste" en producción.</p>
+                        <h5>2024 - Reconocimiento</h5>
+                        <p>Recibimos el premio "Moda Sostenible" por nuestra innovación en materiales
+                            orgánicos y comercio justo.</p>
                     </div>
-                    <div class="tabs__content">
-                        <div class="content-section active" id="item1">
-                            <h1>🌿 Historia de la Marca</h1>
-                            <div class="">
-                                <p><strong>VerdeModa</strong> es una tienda de moda sustentable que nace de la pasión
-                                    por ofrecer prendas eco-friendly, elaboradas con materiales orgánicos y procesos
-                                    éticos.
-                                    <br>
-                                    Nacimos como una pequeña tienda online en 2020, cuando nuestra fundadora Coco Lo
-                                    identificó la necesidad de ofrecer moda sustentable accesible en todo Chile sin
-                                    necesidad de locales físicos que incrementan el consumo energético.
-                                </p>
 
-                                Nuestro objetivo es reflejar nuestra esencia y facilitar la experiencia de compra de
-                                nuestros clientes.
-                                <div class="momentos">
-                                    <h3>2020 - Los Inicios</h3>
-                                    <p>Comenzamos confeccionando prendas con retazos de tela reciclada en un pequeño
-                                        taller, vendiendo directamente a amigos y familiares.</p>
-                                    <h3>2022 - Primer Local</h3>
-                                    <p>Abrimos nuestro primer espacio físico en el barrio Lastarria, donde implementamos
-                                        nuestro sistema de "zero waste" en producción.</p>
-                                    <h3>2024 - Reconocimiento</h3>
-                                    <p>Recibimos el premio "Moda Sostenible" por nuestra innovación en materiales
-                                        orgánicos y comercio justo.</p>
-                                </div>
-
-                                <blockquote
-                                    style="font-style: italic; padding: 1rem; background: #6e916744; border-left: 4px solid #6e9167; margin: 1rem 0;">
-                                    "Cada prenda que creamos lleva consigo el compromiso de cuidar nuestro planeta y
-                                    valorar el trabajo artesanal"
-                                    <span
-                                        style="display: block; margin-top: 0.5rem; font-weight: bold; color: black; font-style:normal;">-
-                                        Coco Lo, Fundadora</span>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <div class="content-section" id="item2">
-                            <h1>Filosofía</h1>
-                            <div class="">
-                                <ul>Nuestra filosofía se basa en:
-                                    <li>✔<strong> Moda consciente: </strong>Prendas duraderas, no fast fashion.</li>
-                                    <li>✔<strong> Sustentabilidad: </strong>Uso de algodón orgánico, tintes naturales y
-                                        materiales reciclados.</li>
-                                    <li>✔<strong> Comercio justo: </strong>Apoyo a artesanos locales y talleres con
-                                        condiciones laborales dignas.</li>
-                                </ul>
-                            </div>
-                            <div class="valores">
-                                <h2>Nuestros Valores</h2>
-                                <ul>
-                                    <li>🍃 <strong>Sustentabilidad:</strong> Cada decisión pasa por nuestro filtro
-                                        ambiental</li>
-                                    <li>🍃 <strong>Transparencia:</strong> Sabrás exactamente cómo y dónde se hizo tu
-                                        prenda</li>
-                                    <li>🍃 <strong>Calidad:</strong> Prendas diseñadas para durar, no para desechar</li>
-                                    <li>🍃 <strong>Comunidad:</strong> Trabajamos con talleres locales y cooperativas
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="content-section" id="item3">
-                            <h1>Nuestra Visión y Misión</h1>
-                            <div class="mision">
-                                <img src="assets/img/leaf.webp" alt="Icono misión" width="50px"
-                                    style="position:absolute; right:15%">
-                                <h2>Misión</h2>
-                                <p>Revolucionar la industria de la moda a través de prácticas sostenibles, ofreciendo
-                                    prendas atemporales confeccionadas con materiales ecológicos y procesos éticos que
-                                    respeten tanto al medio ambiente como a las personas involucradas en su producción.
-                                </p>
-                            </div>
-                            <br>
-                            <div class="vision">
-                                <img src="assets/img/leaf.webp" alt="Icono visión" width="50px"
-                                    style="position:absolute; right:15%">
-                                <h2>Visión</h2>
-                                <p>Para 2030, ser la plataforma digital líder en moda circular en Chile, con un sistema
-                                    logístico 100% carbono neutral y entregas en vehículos eléctricos en las principales
-                                    ciudades del país.</p>
-                            </div>
-
-                        </div>
-                        <div class="content-section" id="item4">
-                            <h1>Encuéntranos en...</h1>
-                            <div class="">
-                                <div class="">
-                                    <h2>Desde Santiago para todo Chile</h2>
+                    <blockquote
+                        style="font-style: italic; padding: 1rem; background: #6e916744; border-left: 4px solid #6e9167; margin: 1rem 0;">
+                        "Cada prenda que creamos lleva consigo el compromiso de cuidar nuestro planeta y
+                        valorar el trabajo artesanal"
+                        <span
+                            style="display: block; margin-top: 0.5rem; font-weight: bold; color: black; font-style:normal;">-
+                            Coco Lo, Fundadora</span>
+                    </blockquote>
+                    <hr>
+                    <h3 id="scrollspyHeading2">Filosofía</h3>
+                    <div class="">
+                        <ul>Nuestra filosofía se basa en:
+                            <li>✔<strong> Moda consciente: </strong>Prendas duraderas, no fast fashion.</li>
+                            <li>✔<strong> Sustentabilidad: </strong>Uso de algodón orgánico, tintes naturales y
+                                materiales reciclados.</li>
+                            <li>✔<strong> Comercio justo: </strong>Apoyo a artesanos locales y talleres con
+                                condiciones laborales dignas.</li>
+                        </ul>
+                    </div>
+                    <div class="valores">
+                        <h4>Nuestros Valores</h4>
+                        <ul>
+                            <li>🍃 <strong>Sustentabilidad:</strong> Cada decisión pasa por nuestro filtro
+                                ambiental</li>
+                            <li>🍃 <strong>Transparencia:</strong> Sabrás exactamente cómo y dónde se hizo tu
+                                prenda</li>
+                            <li>🍃 <strong>Calidad:</strong> Prendas diseñadas para durar, no para desechar</li>
+                            <li>🍃 <strong>Comunidad:</strong> Trabajamos con talleres locales y cooperativas
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <h3 id="scrollspyHeading3">Nuestra Visión y Misión</h3>
+                    <div class="mision">
+                        <img src="assets/img/leaf.webp" alt="Icono misión" width="50px"
+                            style="position:absolute; right:15%">
+                        <h4>Misión</h4>
+                        <p>Revolucionar la industria de la moda a través de prácticas sostenibles, ofreciendo
+                            prendas atemporales confeccionadas con materiales ecológicos y procesos éticos que
+                            respeten tanto al medio ambiente como a las personas involucradas en su producción.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="vision">
+                        <img src="assets/img/leaf.webp" alt="Icono visión" width="50px"
+                            style="position:absolute; right:15%">
+                        <h4>Visión</h4>
+                        <p>Para 2030, ser la plataforma digital líder en moda circular en Chile, con un sistema
+                            logístico 100% carbono neutral y entregas en vehículos eléctricos en las principales
+                            ciudades del país.</p>
+                    </div>
+                    <hr>
+                    <h3 id="scrollspyHeading4">Encuéntranos...</h3>
+                    <h5>Desde Santiago para todo Chile</h5>
                                     <p>Somos una tienda 100% online con base en Santiago, lo que nos permite ofrecer precios
                                         más competitivos y reducir nuestra huella de carbono al evitar el gasto energético
                                         de un local físico.</p>
                                     <div>
-                                        <h3>Envíos a todo Chile</h3>
+                                        <h4>Envíos a todo Chile</h4>
                                         <ul>
                                             <li><strong>Región Metropolitana:</strong> 1-2 días hábiles</li>
                                             <li><strong>Zona Norte y Centro:</strong> 2-3 días hábiles</li>
@@ -144,30 +163,46 @@
                                         <p>Todos nuestros paquetes utilizan materiales 100% reciclables y compensamos la
                                             huella de carbono de cada envío a través de nuestro programa de reforestación.
                                         </p>
-                                        <h3>Puntos de Retiro</h3>
+                                        <h4>Puntos de Retiro</h4>
                                         <p>En Santiago ofrecemos la opción de retiro en punto sustentable (Barrio Lastarria)
                                             para reducir aún más el impacto ambiental.</p>
     
                                     </div>
-                                    <div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
+                  </div>
+            </div>
+        </section>
 
     </main>
     <footer>
-        <div class="footbar">
-            <h3>VerdeModa</h3>
-            <p>Desde 2020 creando moda que respeta el medio ambiente y las personas. Cada prenda cuenta una historia de
-                sustentabilidad y diseño consciente.</p>
-            <p>Creado por Carolina Hernández Barra</p>
+        <div class="container-fluid footbar">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 ">
+                    <h5 class="text-success mt-2 mb-2">
+                        <i class="fas fa-leaf me-2 "></i>
+                        VerdeModa
+                    </h5>
+                    <p class="mb-0 px-2">Desde 2020 creando moda que respeta el medio ambiente y las personas. Cada prenda cuenta una historia de
+                        sustentabilidad y diseño consciente</p>
+                </div>
+                <div class="col-md-4 col-sm-12 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-success me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-success me-2">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-success">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="mb-0 small mt-1 px-0">© 2025 VerdeModa. Todos los derechos reservados.</p>
+                    <p class="mb-0 small mt-1 px-0">Creado por Carolina Hernández Barra</p>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="./assets/scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
 </html>

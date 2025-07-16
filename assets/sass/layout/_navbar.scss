@@ -9,12 +9,15 @@
     margin: 0;
     padding: 10px;
     font-size: 1rem;
-    height: 45px;
     position:static;
     background-color: $color-dark;
     font-family: $font-secondary;
     @include flex-center;
     flex-direction: column;
+    & a{
+        color:$color-light;
+        transition: all 0.3s ease;
+    }
     
     li {
         overflow: hidden;
@@ -32,12 +35,17 @@
             }
             &.active {
                 color: $color-light;
-                text-decoration: underline;
+                background: $color-secondary;
+                border-radius: 20px;
             }
         }
     }
 }
 
+.navbar-toggler {
+    background-color: $color-secondary;
+    color: $color-dark;
+}
 
 @media (min-width: 768px) {
     .navbar {
