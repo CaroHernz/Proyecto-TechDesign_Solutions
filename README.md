@@ -1,6 +1,5 @@
 <h1 align= "center"> 🌿 Proyecto VerdeModa 🌿</h1>
 
-# Proyecto con Bootstrap 5 - VerdeModa
 Este proyecto implementa una tienda de moda sustentable utilizando Bootstrap 5 como framework CSS, con personalización mediante SASS.
 
 ## Contexto
