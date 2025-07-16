@@ -1,10 +1,13 @@
 <h1 align= "center"> 🌿 Proyecto VerdeModa 🌿</h1>
 
+# Proyecto con Bootstrap 5 - VerdeModa
+Este proyecto implementa una tienda de moda sustentable utilizando Bootstrap 5 como framework CSS, con personalización mediante SASS.
+
 ## Contexto
 Una pequeña tienda de ropa sustentable, **“VerdeModa”**, ha crecido gracias al boca a boca y redes sociales. Actualmente, su presencia online es muy limitada: solo tiene un catálogo en PDF y toma pedidos por WhatsApp. La dueña, interesada en mejorar la experiencia del cliente y ampliar su alcance, desea implementar un sitio web responsive, visualmente atractivo y fácil de mantener, alineado con su imagen de marca. Sin embargo, no tiene conocimientos técnicos y busca un equipo que pueda convertir su visión en un producto digital funcional.
 
 ### 🎯 Aprendizaje esperado
-Implementar una interfaz web utilizando el modelo de cajas acorde a las especificaciones de un prototipo.
+Implementar una interfaz de usuario web utilizando el framework CSS Bootstrap 5 para simplificar el desarrollo de layouts, contenidos y componentes.
 
 ### 🛠 Tecnologías Utilizadas
 * **Frontend:** HTML5, CSS, JavaScript, Sass
@@ -17,17 +20,57 @@ Implementar una interfaz web utilizando el modelo de cajas acorde a las especifi
 - Responsive Design: Adaptable a móviles y desktop.
 
 ### 📌 Actividad
-Incorporar al proyecto un diseño utilizando el modelo de cajas de CSS (box model) acorde a las especificaciones de un prototipo, asegurando que los elementos de la página se ajusten correctamente según las reglas de este modelo.
+Como parte de este ejercicio se necesita incorporar al proyecto anterior un diseño utilizando Bootstrap 5 como Framework CSS.
 
-### 🛠 Requerimientos de la Actividad
+### 🛠 Requerimientos 
 
-* **Interfaz acorde al prototipo:**
-  * ***Caja del contenedor principal:*** contenedor principal ocupa 80% del ancho de la ventana, centrado horizontalmente. Tiene un borde de 1px de grosor y de color gris claro. Tiene un padding de 20px y margin ajustado al contenedor de manera tal que los bordes no tocan la ventana.
-  * ***Modelo de cajas para elementos:*** los elementos de la página han sido diseñados utilizando el modelo de cajas, asegurando que cada elemento tiene en cuenta el margin, border, padding y width.
-  * ***El header*** ocupa todo el ancho de la pantalla, con un padding de 10px y color de fondo sólido.
-  * ***El footer*** es un contenedor con una altura de 100px, padding de 20px y color de fondo que contrasta con el header. Además contiene un margin-top de 50px.
-  * ***Uso del modelo de cajas para botones:*** los botones tienen un padding interno, borde definido y espacio entre ellos. Los botones son redondeados y tienen un efecto al pasar el mouse.
-  * ***Responsividad y ajuste con el modelo de caja:*** los elementos de la interfaz se ajustan a diferentes tamaños de pantalla. Se utilizan media queries para ajustar el diseño a pantallas más pequeñas.
+1. **Interfaz con Bootstrap 5:**
+  * **Contenedor principal:**
+    - Uso de `.container` con ancho del 80% mediante `max-width: 80%`
+    - Borde gris claro con `border: 1px solid #dee2e6`
+    - Padding de 20px y margen superior/inferior
+  * **Navbar responsivo:**
+    - Implementado con el componente navbar de Bootstrap
+    - Menú colapsable en móviles
+    - Logo y elementos de navegación alineados correctamente
+  * **Sistema grid:**
+    - Uso de sistema grid de Bootstrap para organizar contenido
+    - Columnas responsivas con `col-md y col-sm`
+  * **Footer:**
+    - Implementado con clases de Bootstrap
+    - Diseño simple y centrado
+    - Incluye icono de redes sociales
+      
+2. **Uso de SASS para modularización:**
+  * **Estructura del archivos:**
+```
+Proyecto-Bootstrap/
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── style.css.map
+│   ├── img/
+│   ├── scripts/
+│   └── scss/
+│       ├── abstracts/
+│       ├── base/
+│       ├── components/
+│       ├── layout/
+│       ├── page/
+│       ├── themes/
+│       ├── vendors/
+│       └── main.scss *custom*
+├── index.html
+├── catalogo.html
+├── contacto.html
+├── about.html
+└── README.md
+```
+
+3. **Personalización responsiva:**
+   * Sobreescritura de estilos de Bootstrap manteniendo su flexibilidad
+   * Ajustes específicos para diferentes breakpoints
+   * Componentes personalizados: botones con efecto hover, tarjeta de productos estilizadas, navbar con color personalizado, entre otros.
 
 ### Creado por
 <p align="center"> 
