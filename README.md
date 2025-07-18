@@ -19,10 +19,8 @@ Implementar una interfaz de usuario web utilizando buenas prácticas en el manej
 - Catálogo de Productos
 - Responsive Design: Adaptable a móviles y desktop.
 
-### 📌 ...
-...
+### 📌 Estructura del Proyecto
 
-  * **Estructura del archivos:**
 ```
 Proyecto-Bootstrap/
 ├── assets/
@@ -39,11 +37,9 @@ Proyecto-Bootstrap/
 │       ├── page/
 │       ├── themes/
 │       ├── vendors/
+│       │   └── _bootstrap.scss
 │       └── main.scss *custom*
 ├── index.html
-├── catalogo.html
-├── contacto.html
-├── about.html
 └── README.md
 ```
 
@@ -74,6 +70,6 @@ Proyecto-Bootstrap/
   * Personalización de estilos de Bootstrap mediante variables de SASS
 
 ### Responsables
-<p align="center"> 
+<h5 align="center"> 
   <a href="https://github.com/CaroHernz">Carolina Hernández</a>
-</p>
+</h5>
