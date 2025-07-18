@@ -5,205 +5,335 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VerdeModa</title>
-    <link rel="icon" href="assets/img/leaf.webp" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>TechDesign Solutions</title>
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container">
-                <a href="#" class="navbar-brand">
-                    <i class="fas fa-leaf me-2"></i>VerdeModa
+                <a href="#" class="navbar-brand techdesign__logo">
+                    <i class="fas fa-laptop-code me-2"></i>TechDesign Solutions
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Home</a>
+                            <a href="#" class="nav-link active">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="nav-link">Sobre nosotros</a>
-                        </li>
+                          <a href="#servicios" class="nav-link">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#proyectos" class="nav-link">Nosotros</a>
+                    </li>
                         <li class="nav-item">
-                            <a href="catalogo.html" class="nav-link">Catálogo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contacto.html" class="nav-link">Contacto</a>
+                            <a href="#contacto" class="nav-link">Contacto</a>
                         </li>
                     </ul>
+                    <div class="d-flex">
+                      <a href="#" class="btn btn-outline-light me-2">Login</a>
+                      <a href="#" class="btn btn-light">Registro</a>
+                    </div>
                 </div>
             </div>
         </nav>        
     </header>
-    <main class="container my-5 py-3 border" style="max-width: 80%;">
-        <div class="banner">
-            <img src="./assets/img/verdemoda_banner.jpeg" alt="Banner VerdeModa" class="banner__image">
-            <div class="banner__content"></div>
+    <main>
+      <section class="techdesign__hero">
+        <div class="container-fluid px-0">
+          <div class="carousel slide" id="mainCarousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://elysiamstudio.com/wp-content/uploads/2022/11/trucchi-ecommerce.jpg" class="d-block w-100" alt="Soluciones E-commerce">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="techdesign__hero--title">Plataformas E-commerce a Medida</h2>
+                  <p class="techdesign__hero--text">Desarrollamos tu tienda online con tecnología de vanguardia</p>
+                  <a href="" class="btn btn-primary btn-lg">Ver más</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.seonetdigital.com/wp-content/uploads/2024/10/seonet-plataforma-ecommerce.png" class="d-block w-100" alt="Ofertas especiales">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="techdesign__hero--title">Tecnología que Impulsa Ventas</h2>
+                  <p class="techdesign__hero--text">Soluciones personalizadas para maximizar tu conversión</p>
+                  <a href="" class="btn btn-primary btn-lg">Contactar</a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+
+            </div>
+          </div>
         </div>
-
-        <section>
-            <div class="container-fluid">
-                <div class="row align-items-stretch py-1">
-                    <div class="col-md-6 home__container--a d-flex flex-column">
-                        <h2 class="display-6 fw-bold text-success mb-1">
-                            Moda con Conciencia Ecológica</h2>
-                        <p class="container__description tagline">Viste bien, vive mejor, cuida el planeta</p>
-                        <div id="carouselExampleIndicators" class="carousel slide">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-
-                            </div>
-                            <div class="carousel-inner ">
-                              <div class="carousel-item active" data-bs-interval="5000">
-                                <img src="/assets/img/img1.jpeg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./assets/img/img2.jpeg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./assets/img/img3.jpeg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./assets/img/img4.jpeg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./assets/img/img5.jpeg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./assets/img/img6.jpeg" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                          <a href="catalogo.html" class="contenedor__link">Descubre nuestra colección</a>
-                    </div>
-                    <div class="col-md-6 home__container--b d-flex flex-column">
-                        <h3 class="display-6 fw-bold text-light mb-3">
-                           Nuestro Compromiso Verde
-                        </h3>
-                <div class="container__item">
-                    <img src="assets/img/leaf.webp" alt="Materiales sustentables"width="40px"
-                style="position:static;">
-                    <h3 class="container__subtitle">Materiales Responsables</h3>
-                    <p class="container__description">Utilizamos algodón orgánico, lino y materiales reciclados en todas nuestras prendas.</p>
-                </div>
-                <div class="container__item">
-                    <img src="assets/img/leaf.webp" alt="Materiales sustentables"width="40px"
-                style="position:static;">
-                    <h3 class="container__subtitle">Producción Ética</h3>
-                    <p class="container__description">Trabajamos con talleres locales que garantizan condiciones laborales justas.</p>
-                </div>
-                <div class="container__item">
-                    <img src="assets/img/leaf.webp" alt="Materiales sustentables"width="40px"
-                style="position:static;">
-                    <h3 class="container__subtitle">Procesos Limpios</h3>
-                    <p class="container__description">Tintes naturales y procesos que reducen el consumo de agua en un 70%.</p>
-                </div>
+      </section>
+      <section id="servicios" class="techdesign__services py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 techdesign__section-title">Nuestros Servicios</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card techdesign__service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shopping-cart fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Desarrollo E-commerce</h3>
+                            <p class="card-text">Plataformas personalizadas con carrito de compras, pasarelas de pago y gestión de inventario.</p>
+                            <ul class="text-start">
+                                <li>Integración con ERP/CRM</li>
+                                <li>Diseño responsive</li>
+                                <li>Optimización para conversión</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="row align-items-stretch ">
-                    <div class="col-lg-6 home__container--b d-flex flex-column">
-                        <h2 class="container__title display-6 fw-bold text-light mb-3">Únete al Movimiento de Moda Sustentable</h2>
-                <p class="container__description">Suscríbete y recibe un 10% de descuento en tu primera compra</p>
-                <form class="container__form">
-                    <input type="email" placeholder="Tu correo electrónico" required>
-                    <button type="submit">Suscribirme</button>
-                </form>
-                <p class="container__description">Prometemos no compartir tu información. Revisa nuestra <a href="#">política de
-                        privacidad</a>.</p>
+                <div class="col-md-4">
+                    <div class="card techdesign__service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Aplicaciones Móviles</h3>
+                            <p class="card-text">Apps nativas para iOS y Android conectadas a tu plataforma de comercio electrónico.</p>
+                            <ul class="text-start">
+                                <li>Push notifications</li>
+                                <li>Pagos con wallet</li>
+                                <li>Experiencia UX optimizada</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-6 home__container--a d-flex flex-column">
-                        <h2 class="container__title display-6 fw-bold text-success mb-1">Lo Más Vendido</h2>
-                        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active" data-bs-interval="5000">
-                                <img src="/assets/img/vestuario3.jpeg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Más Vendido Vestuario</h5>
-                                  <p>Vestido Largo "Noche Verde"</p>
-                                </div>
-                              </div>
-                              <div class="carousel-item" data-bs-interval="2000">
-                                <img src="/assets/img/joyas3.jpeg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Más Vendido Joyas</h5>
-                                  <p>Set "Esencia Verde"</p>
-                                </div>
-                              </div>
-                              <div class="carousel-item" data-bs-interval="2000">
-                                <img src="/assets/img/accesory3.jpeg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                  <h5>Más Vendido Accesorios</h5>
-                                  <p>Cartera "Leaf Collection"</p>
-                                </div>
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                    <a href="catalogo.html" class="contenedor__link">Ver catálogo completo</a>
+                </div>
+                <div class="col-md-4">
+                    <div class="card techdesign__service-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Marketing Digital</h3>
+                            <p class="card-text">Estrategias integradas para aumentar el tráfico y conversión de tu tienda online.</p>
+                            <ul class="text-start">
+                                <li>SEO para e-commerce</li>
+                                <li>Campañas performance</li>
+                                <li>Analítica avanzada</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container-fluid footbar">
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="proyectos" class="techdesign__projects py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 techdesign__section-title">Proyectos Destacados</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card techdesign__project-card h-100">
+                        <img src="https://www.ikonnos.es/wp-content/uploads/2020/01/compra-tienda-virtual-moda.jpg" class="card-img-top" alt="Plataforma de Moda">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Tienda Online de Moda</h3>
+                            <p class="card-text">Plataforma con visualización 3D de prendas y probador virtual.</p>
+                            <div class="techdesign__project-features">
+                                <span class="badge bg-danger">+120% conversión</span>
+                                <span class="badge bg-success">Integración ERP</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-primary">Ver caso de éxito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card techdesign__project-card h-100">
+                        <img src="https://multimerch.com/wp-content/uploads/2019/06/multimerch-marketplace-platform-hero.png" class="card-img-top" alt="E-commerce Tecnología">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Marketplace Tecnológico</h3>
+                            <p class="card-text">Plataforma multicompañía con sistema de dropshipping integrado.</p>
+                            <div class="techdesign__project-features">
+                                <span class="badge bg-danger">20 proveedores</span>
+                                <span class="badge bg-info">Pagos unificados</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-primary">Ver caso de éxito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card techdesign__project-card h-100">
+                        <img src="https://itnconsultores.com/wp-content/uploads/SistemaPedidos_IpadIphone_trans.png" class="card-img-top" alt="Delivery Alimentos">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Plataforma Delivery Premium</h3>
+                            <p class="card-text">Solución completa con app móvil y gestión logística en tiempo real.</p>
+                            <div class="techdesign__project-features">
+                                <span class="badge bg-info">Geolocalización</span>
+                                <span class="badge bg-danger">+50 restaurantes</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-primary">Ver caso de éxito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso de Trabajo -->
+    <section class="techdesign__process py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 techdesign__section-title">Nuestro Proceso</h2>
             <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <h5 class="text-success mt-2 mb-2">
-                        <i class="fas fa-leaf me-2 "></i>
-                        VerdeModa
-                    </h5>
-                    <p class="mb-0 px-2">Desde 2020 creando moda que respeta el medio ambiente y las personas. Cada prenda cuenta una historia de
-                        sustentabilidad y diseño consciente</p>
-                </div>
-                <div class="col-md-4 col-sm-12 text-md-end">
-                    <div class="social-links">
-                        <a href="#" class="text-success me-2">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-success me-2">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" class="text-success">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
+                <div class="col-lg-10 mx-auto">
+                    <div class="techdesign__process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Consultoría</h3>
+                            <p>Análisis de requerimientos y definición de estrategia</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Diseño UX/UI</h3>
+                            <p>Prototipado y diseño de interfaces centrado en conversión</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Desarrollo</h3>
+                            <p>Implementación con metodologías ágiles y sprints semanales</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Lanzamiento</h3>
+                            <p>Implementación en producción y capacitación de equipos</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h3>Soporte</h3>
+                            <p>Mantenimiento continuo y optimización post-lanzamiento</p>
+                        </div>
                     </div>
-                    <p class="mb-0 small mt-1 px-0">© 2025 VerdeModa. Todos los derechos reservados.</p>
-                    <p class="mb-0 small mt-1 px-0">Creado por Carolina Hernández Barra</p>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+
+    
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="techdesign__contact py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="techdesign__section-title mb-4">¿Listo para transformar tu negocio?</h2>
+                    <p class="lead">Déjanos tus datos y nos pondremos en contacto contigo en menos de 24 horas.</p>
+                    
+                    <form class="techdesign__contact-form">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="empresa" class="form-label">Empresa</label>
+                            <input type="text" class="form-control" id="empresa">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Cuéntanos sobre tu proyecto</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Solicitar Consultoría</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="techdesign__contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope fa-2x text-primary"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contacto@techdesignsolutions.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone fa-2x text-primary"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+56 2 2345 6789</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                            <div>
+                                <h4>Oficina Central</h4>
+                                <p>Av. Apoquindo 4500, Las Condes, Santiago</p>
+                            </div>
+                        </div>
+                        <div class="techdesign__social-media">
+                            <a href="#" class="btn btn-primary"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="techdesign__footer bg-dark text-white py-5">
+      <div class="container">
+          <div class="row g-4">
+              <div class="col-lg-4">
+                  <h3><i class="fas fa-laptop-code me-2"></i>TechDesign Solutions</h3>              
+                  <p>Especialistas en desarrollo de plataformas de comercio electrónico para empresas innovadoras.</p>
+                  <p class="small">© 2025 TechDesign Solutions. Todos los derechos reservados.</p>
+                  <div class="techdesign__social">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4">
+                  <h3 class="h5 mb-3">Servicios</h3>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="#" class="text-white text-decoration-none">Desarrollo E-commerce</a></li>
+                      <li class="mb-2"><a href="#" class="text-white text-decoration-none">Aplicaciones Móviles</a></li>
+                      <li class="mb-2"><a href="#" class="text-white text-decoration-none">Marketing Digital</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Consultoría</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-2 col-md-4">
+                  <h3 class="h5 mb-3">Empresa</h3>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="#" class="text-white text-decoration-none">Nosotros</a></li>
+                      <li class="mb-2"><a href="#" class="text-white text-decoration-none">Equipo</a></li>
+                      <li class="mb-2"><a href="#" class="text-white text-decoration-none">Trabaja con Nosotros</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                  <h3 class="h5 mb-3">Suscríbete</h3>
+                  <p>Recibe insights y tendencias de e-commerce directamente en tu correo.</p>
+                  <div class="input-group mb-3">
+                      <input type="email" class="form-control" placeholder="Tu correo electrónico">
+                      <button class="btn btn-primary" type="button">Suscribir</button>
+                  </div>
+                  <small class="text-muted">Al suscribirte aceptas nuestra Política de Privacidad</small>
+              </div>
+          </div>
+      </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 

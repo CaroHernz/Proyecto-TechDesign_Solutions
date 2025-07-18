@@ -1,16 +1,17 @@
-<h1 align= "center"> 🌿 Proyecto VerdeModa 🌿</h1>
+<h1 align= "center"> Evaluación Final Módulo 3 </h1>
 
 Este proyecto implementa una tienda de moda sustentable utilizando Bootstrap 5 como framework CSS, con personalización mediante SASS.
 
 ## Contexto
-Una pequeña tienda de ropa sustentable, **“VerdeModa”**, ha crecido gracias al boca a boca y redes sociales. Actualmente, su presencia online es muy limitada: solo tiene un catálogo en PDF y toma pedidos por WhatsApp. La dueña, interesada en mejorar la experiencia del cliente y ampliar su alcance, desea implementar un sitio web responsive, visualmente atractivo y fácil de mantener, alineado con su imagen de marca. Sin embargo, no tiene conocimientos técnicos y busca un equipo que pueda convertir su visión en un producto digital funcional.
+La empresa **TechDesign Solutions**, especializada en el desarrollo de plataformas de comercio electrónico, necesita rediseñar su portal web para mejorar la experiencia del usuario y aumentar las conversiones. Para ello, el equipo de desarrollo ha decidido implementar una interfaz modular y escalable utilizando metodologías modernas como BEM y preprocesadores CSS. Además, aprovecharán Bootstrap 5 para agilizar la creación de componentes reutilizables y garantizar una experiencia responsiva. Como parte de este proyecto, tu tarea será desarrollar una sección clave del portal web siguiendo las mejores prácticas de desarrollo de interfaces.
 
-### 🎯 Aprendizaje esperado
-Implementar una interfaz de usuario web utilizando el framework CSS Bootstrap 5 para simplificar el desarrollo de layouts, contenidos y componentes.
+### 🎯 Objetivo
+Implementar una interfaz de usuario web utilizando buenas prácticas en el manejo de estilos para brindar un aspecto visual e interacciones acordes a lo requerido.
 
 ### 🛠 Tecnologías Utilizadas
 * **Frontend:** HTML5, CSS, JavaScript, Sass
 * **Control de Versiones:** Git & GitHub
+* **Framework CSS:** Bootstrap 5.3.7
 	
 ### 🎨 Características Implementadas
 - Navbar & Footer: Diseño consistente en todas las páginas.
@@ -18,29 +19,9 @@ Implementar una interfaz de usuario web utilizando el framework CSS Bootstrap 5 
 - Catálogo de Productos
 - Responsive Design: Adaptable a móviles y desktop.
 
-### 📌 Actividad
-Como parte de este ejercicio se necesita incorporar al proyecto anterior un diseño utilizando Bootstrap 5 como Framework CSS.
+### 📌 ...
+...
 
-### 🛠 Requerimientos 
-
-1. **Interfaz con Bootstrap 5:**
-  * **Contenedor principal:**
-    - Uso de `.container` con ancho del 80% mediante `max-width: 80%`
-    - Borde gris claro con `border: 1px solid #dee2e6`
-    - Padding de 20px y margen superior/inferior
-  * **Navbar responsivo:**
-    - Implementado con el componente navbar de Bootstrap
-    - Menú colapsable en móviles
-    - Logo y elementos de navegación alineados correctamente
-  * **Sistema grid:**
-    - Uso de sistema grid de Bootstrap para organizar contenido
-    - Columnas responsivas con `col-md y col-sm`
-  * **Footer:**
-    - Implementado con clases de Bootstrap
-    - Diseño simple y centrado
-    - Incluye icono de redes sociales
-      
-2. **Uso de SASS para modularización:**
   * **Estructura del archivos:**
 ```
 Proyecto-Bootstrap/
@@ -66,12 +47,33 @@ Proyecto-Bootstrap/
 └── README.md
 ```
 
-3. **Personalización responsiva:**
-   * Sobreescritura de estilos de Bootstrap manteniendo su flexibilidad
-   * Ajustes específicos para diferentes breakpoints
-   * Componentes personalizados: botones con efecto hover, tarjeta de productos estilizadas, navbar con color personalizado, entre otros.
 
-### Creado por
+### 🛠 Requerimientos 
+
+1. **Metodología BEM**
+  * Escritura del código CSS utilizando metodología BEM
+  * Nombres de clases acordes a BEM (Bloque, Elemento, Modificador)
+  * Coherencia en la nomenclatura de clases
+  * Se evita el uso de selectores de etiquetas y anidaciones innecesarias
+      
+2. **Preprocesadores CSS**
+  * Se implementa SASS como preprocesador de CSS
+  * Divide los estilos en archivos parciales para modularizar la estructura
+  * Uso de variables para definir colores, fuentes y otros valores reutilizables
+  * Se implementan mixins y/o funciones para evitar repeticiones en los estilos
+
+3. **Modelo de Cajas**
+  * Los elementos siguen el modelo de cajas
+  * Se utiliza `box-sizing: border-box`para facilitar el cálculo de dimensiones
+  * Se aplica padding y margin para el espaciado entre elementos
+  * Diseño de la distribución de los elementos acorde al prototipo proporcionado
+
+4. **Uso de Bootstrap 5**
+  * Se implementa sistema de grid de Bootstrap 5 para la estructura del layout
+  * Se usan componentes de Bootstrap 5 como: botones, formularios y tarjetas.
+  * Personalización de estilos de Bootstrap mediante variables de SASS
+
+### Responsables
 <p align="center"> 
   <a href="https://github.com/CaroHernz">Carolina Hernández</a>
 </p>

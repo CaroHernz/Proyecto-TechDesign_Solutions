@@ -10,12 +10,11 @@
     padding: 10px;
     font-size: 1rem;
     position:static;
-    background-color: $color-dark;
-    font-family: $font-secondary;
+    background-color: $primary-color;
     @include flex-center;
     flex-direction: column;
     & a{
-        color:$color-light;
+        color:$light-color;
         transition: all 0.3s ease;
     }
     
@@ -26,26 +25,21 @@
         gap: 20px;
 
         a {
-            color:$color-secondary;
+            color:$light-color;
             text-decoration: none;
             transition: color 0.3s ease;
 
             &:hover {
-                color: $color-light;
+                text-decoration: dashed;
             }
             &.active {
-                color: $color-light;
-                background: $color-secondary;
-                border-radius: 20px;
+                text-decoration: underline;
             }
         }
     }
 }
 
-.navbar-toggler {
-    background-color: $color-secondary;
-    color: $color-dark;
-}
+
 
 @media (min-width: 768px) {
     .navbar {
