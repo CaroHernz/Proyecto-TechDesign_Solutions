@@ -70,6 +70,9 @@ Proyecto-Bootstrap/
   * Personalización de estilos de Bootstrap mediante variables de SASS
 
 ### Responsables
-<h5 align="center"> 
-  <a href="https://github.com/CaroHernz">Carolina Hernández</a>
-</h5>
+<h4 align="center"> 
+  <a href="https://github.com/CaroHernz">Carolina Hernández</a> | 
+	<a href="https://github.com/gurrutia15">Gonzalo Urrutia</a> | 
+	<a href="https://github.com/jlmansilla">Juan Luis Mansilla</a> | 
+	<a href="https://github.com/lcarrilloq">Luis Carrillo</a> | 
+</h4>
