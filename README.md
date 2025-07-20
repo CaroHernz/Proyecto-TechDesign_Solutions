@@ -1,6 +1,6 @@
 <h1 align= "center"> Evaluación Final Módulo 3 </h1>
 
-Este proyecto implementa una tienda de moda sustentable utilizando Bootstrap 5 como framework CSS, con personalización mediante SASS.
+Este proyecto implementa una landing page para una empresa de asesoría y desarrollo web, utilizando Bootstrap 5 como framework CSS, con personalización mediante SASS.
 
 ## Contexto
 La empresa **TechDesign Solutions**, especializada en el desarrollo de plataformas de comercio electrónico, necesita rediseñar su portal web para mejorar la experiencia del usuario y aumentar las conversiones. Para ello, el equipo de desarrollo ha decidido implementar una interfaz modular y escalable utilizando metodologías modernas como BEM y preprocesadores CSS. Además, aprovecharán Bootstrap 5 para agilizar la creación de componentes reutilizables y garantizar una experiencia responsiva. Como parte de este proyecto, tu tarea será desarrollar una sección clave del portal web siguiendo las mejores prácticas de desarrollo de interfaces.
